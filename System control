@@ -1,0 +1,103 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+	int i,j;
+			for(i=0;i<=100;i++)
+	{
+		if(i+5>100)
+		break;
+		printf("\t\tThis process may take some time.\n\t\tThis is only for first time before running the program.\n\n\nExecuting the files to the system...\t\t\t%d%%  \nGetting administrator permission...\t\t\t%d%%\nmoving files to the system cache...\t\t\t%d%%",i,i+5,i+3);
+		sleep(0.9);
+		system("cls");
+	}
+	sleep(3);
+	system("color 0A");
+
+		printf("Exection of file to the system\t\t\tCompleted.\nGetting administrator permission...\t\tCompleted.\nMoving files to the system cache...\t\tCompleted.");
+	printf("\n\n\n\t\t\t");
+	system("pause");
+	system("cls");
+	sleep(2);
+	system("color 0D");
+	printf("\n\n\n\n\n\t\t\t\tLoading...\n\t\t\t");
+	for(i=1;i<=25;i++){
+    for(j=1;j<=20000000;j++);
+	printf("%c",177);}
+	system("color 0C");
+	system("cls");
+	printf("\n\n\n\n\n\n\t\t         MID-FINGER GAMES          \n");
+	getch();
+	system("cls");
+	printf("\t\t********************************************\n");
+	printf("\t\t*        MID-FINGER GAMES PRESENTS         *\n");
+	printf("\t\t********************************************\n");
+    printf("*****************************************************************************\n");
+    printf("*#       ##  #########  ###        #################       ###########  ####*\n");
+    printf("*#  ########  ######  #####  ###############      #####  ###  ########  ####*\n");
+    printf("*#       ####  ###  #######        #########  #########  ####  ###  ##  ####*\n");
+    printf("*######  ######   ###############  #########  #########  #####  #  ###  ####*\n");
+    printf("*#       ######   #########        #########      #####  #####   #####  ####*\n");
+    printf("*##############   ############################################  ######  ####*\n");
+    printf("*****************************************************************************\n\n\n\n\t\t\t");
+    system("pause");
+	start:
+		{
+			system("cls");
+	printf("Press :\n\t1. for system information\n\t2. open cmd\n\t3. Ping Network wirh google DNS(8.8.8.8)\n\t4. To get services running\n\t5. To run diskpart");
+	printf("\n\t6. To see the drivers installed in system\n\t7. To edit the current time\n\t8. To change the current date\n\t9. to exit\n");
+	printf("\n\nThis is the beta version of software. We are working for some more functions and features. \n");
+	scanf("%d",&i);
+	switch(i)
+	{
+		case 1:
+			system("cls");
+			system("systeminfo");
+			system("pause");
+			goto start;
+			case 2:
+				system("start cmd");
+				system("pause");
+				goto start;
+				case 3:
+					system("cls");
+					system("ping 8.8.8.8");
+					system("pause");
+					goto start;
+					case 4:
+						system("cls");
+						system("tasklist");
+						system("pause");
+						goto start;
+						case 5:
+							system("cls");
+							system("diskpart");
+							system("pause");
+							goto start;
+					case 6:
+						system("cls");
+						system("driverquery");
+						system("pause");
+						goto start;
+					case 7:
+						system("cls");
+						printf("If you don/'t want to change just press enter.\n");
+						system("time");
+						goto start;
+						case 8:
+							system("cls");
+							printf("If you don/'t want to change just press enter.\n");
+							system("date");
+							goto start;
+							case 9:
+						exit (0);
+				default:
+					system("cls");
+					printf("invalid choice\n");
+					system("pause");
+					goto start;
+	}
+}
+return 0;
+}
