@@ -1,0 +1,55 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+class String
+{
+	char n[50];
+	char m[50];
+	public:
+		String()
+		{
+			n[50]=0;
+			m[50]=0;
+		}
+		String(char str1[],char str2[])
+		{
+			strcpy(n,str1);
+			strcpy(m,str2);
+		}
+		void display()
+		{
+			cout<<"String 1:"<<n<<endl<<"String 2:"<<m<<endl;
+		}
+		void rev()
+		{
+			strrev(n);
+			strrev(m);
+			cout<<"Reverse of both string"<<endl<<"string 1:"<<n<<endl<<"String 2:"<<m<<endl;
+		}
+		
+		void copy()
+		{
+			strcpy(m,n);
+			cout<<"After copying string n to m: \n string m:"<<endl<<m;
+		}
+		
+		void concat()
+		{
+			strcat(n,m);
+			cout<<"After concatenation:"<<endl<<n;
+		}
+		
+		void count()
+		{
+			cout<<"Length of string 1:"<<strlen(n)<<endl<<"Length of string 2:"<<strlen(m)<<endl;
+		}
+};
+int main()
+{
+	String str("joyadeep","Krishna");
+	str.display();
+//	str.rev();
+//	str.copy();
+//	str.concat();
+	str.count();
+}
